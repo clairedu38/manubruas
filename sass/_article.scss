@@ -4,6 +4,10 @@
     padding: 5%;
 }
 
+.article-titre .wp-block-post-terms a {
+    pointer-events: none;
+  }
+
 .entreprise-logo {
     display: flex;
     align-items: center;

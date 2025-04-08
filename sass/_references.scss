@@ -30,13 +30,17 @@
 
         &:hover {
             background-color: var(--light-grey);
+            color: var(--dark-grey);
         }
+    }
+}
 
-        &.selectionne {
-            background-color: var(--yellow);
-            font-weight: bold;
-            strong, p {color: white;}
-        }
+.selectionne {
+    background-color: var(--yellow);
+    font-weight: bold;
+    p {
+        color: white;
+        font-weight: 700;
     }
 }
 
