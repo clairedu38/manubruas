@@ -1,0 +1,96 @@
+.bloc-inscription-newsletter {
+    position: relative;
+}
+
+.image-newsletter {
+    position: absolute; 
+    display: block;
+    margin: 10px auto 0; 
+    max-width: 350px; 
+    bottom: 20%; 
+    right: 10%;
+}
+
+
+// CONTACT ///
+/* Largeur fixe du formulaire */
+form.wpcf7-form {
+    width: 600px; /* Largeur du formulaire */
+    margin: 0 auto; /* Centre le formulaire */
+    padding: 1em; /* Espacement intérieur */
+    background: transparent;
+}
+
+/* Structure du formulaire */
+form.wpcf7-form table {
+    width: 100%;
+}
+
+/* Labels et champs alignés */
+form.wpcf7-form label {
+    display: inline-block;
+    width: 600px; /* Largeur du label */
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Champs du formulaire */
+form.wpcf7-form input,
+form.wpcf7-form select,
+form.wpcf7-form textarea {
+    width: 600px; /* Ajustement pour que le total fasse 400px */
+    background: #F1F0EC;
+    border: 1px solid #ececed;
+    font-size: 0.8em;
+    color: #122345;
+    padding: 5px;
+}
+
+/* Champ texte plus grand */
+form.wpcf7-form textarea {
+    height: 100px;
+}
+
+/* Bouton d'envoi */
+form.wpcf7-form input[type="submit"] {
+    width: 50%;
+    padding: 0.5em;
+    background: var(--yellow);
+    color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 80px; /* Coins arrondis */
+    display: block;
+    margin: 10px auto; /* Centre horizontalement */
+}
+
+form.wpcf7-form input[type="submit"]:hover {
+    background-color: var(--orange);
+}
+
+.wpcf7-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espacement entre la case et le texte */
+}
+
+.wpcf7-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+.bloc-header-contact{
+    position: relative;
+}
+
+.image-contact {
+    position: absolute; 
+    display: block;
+    margin: 10px auto 0; 
+    max-width: 200px; 
+    bottom: 20%; 
+    right: 10%;
+}

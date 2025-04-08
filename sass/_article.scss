@@ -1,0 +1,55 @@
+.article-titre {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 5%;
+}
+
+.entreprise-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        height: 150px;
+    }
+}
+
+article {
+    h3 {
+        text-transform: uppercase;
+    }
+    li {
+        font-size: 14px;
+    }
+
+    .article-temoignage {
+        padding: 80px 300px;
+        display: flex;
+        gap: 50px;
+    }
+
+    strong {
+        color: white;
+        font-weight: 700;
+    }
+    .bloc-contact {
+        padding: 100px;
+        gap: 20px;
+
+        h3 {
+            font-size: 25px;
+        }
+    }
+    span {
+        color: var(--yellow);
+    }
+}
+
+
+.livrable {
+    padding-left: 20px;
+}
+
+.vignette-projet {
+    display: flex;
+}

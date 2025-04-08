@@ -1,0 +1,392 @@
+@charset "UTF-8";
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  color: var(--brown-regular);
+}
+footer .first-footer {
+  background-size: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4vh;
+  background-color: var(--light-grey);
+}
+footer .first-footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+footer .first-footer-logo > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .first-footer-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: right;
+  margin-left: 60px;
+  padding: 0;
+  width: 50%;
+}
+footer .first-footer-menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+footer .first-footer-menu > div li {
+  list-style-type: none;
+  text-align: right;
+  line-height: 2em;
+}
+footer .first-footer-menu > div h3 {
+  text-align: right;
+  font-size: 16px;
+  margin-bottom: 0px;
+}
+footer .first-footer-menu > div img {
+  height: 25px;
+}
+footer .second-footer {
+  background-color: var(--dark-grey);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+footer .second-footer p {
+  color: white;
+}
+footer .second-footer p a {
+  font-family: "Work Sans", sans-serif;
+}
+
+.accueil-banniere {
+  padding: 0 23em;
+}
+
+.accueil-offres {
+  padding: 0 20%;
+}
+
+.accueil-offre div {
+  padding: 30px;
+  border-radius: 30px;
+}
+.accueil-offre h2, .accueil-offre h4 {
+  padding-bottom: 10px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+  background: white;
+  width: 100%;
+}
+header .logo-header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+header .logo-header img {
+  width: auto;
+}
+header #main-menu {
+  margin-right: 5%;
+}
+header .header-menu {
+  display: flex;
+}
+header .header-menu li {
+  list-style-type: none;
+  padding-left: 45px;
+}
+header .menu-toggle {
+  display: none;
+}
+
+.close-menu {
+  display: flex;
+}
+
+.article-titre {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5%;
+}
+
+.entreprise-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.entreprise-logo img {
+  height: 150px;
+}
+
+article h3 {
+  text-transform: uppercase;
+}
+article li {
+  font-size: 14px;
+}
+article .article-temoignage {
+  padding: 80px 300px;
+  display: flex;
+  gap: 50px;
+}
+article strong {
+  color: white;
+  font-weight: 700;
+}
+article .bloc-contact {
+  padding: 100px;
+  gap: 20px;
+}
+article .bloc-contact h3 {
+  font-size: 25px;
+}
+article span {
+  color: var(--yellow);
+}
+
+.livrable {
+  padding-left: 20px;
+}
+
+.vignette-projet {
+  display: flex;
+}
+
+.reference-titre {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5%;
+}
+.reference-titre h1 {
+  margin-bottom: 20px;
+}
+.reference-titre p, .reference-titre strong {
+  color: white;
+}
+
+.bloc-inscription-newsletter {
+  position: relative;
+}
+
+.image-newsletter {
+  position: absolute;
+  display: block;
+  margin: 10px auto 0;
+  max-width: 350px;
+  bottom: 20%;
+  right: 10%;
+}
+
+/* Largeur fixe du formulaire */
+form.wpcf7-form {
+  width: 600px; /* Largeur du formulaire */
+  margin: 0 auto; /* Centre le formulaire */
+  padding: 1em; /* Espacement intérieur */
+  background: transparent;
+}
+
+/* Structure du formulaire */
+form.wpcf7-form table {
+  width: 100%;
+}
+
+/* Labels et champs alignés */
+form.wpcf7-form label {
+  display: inline-block;
+  width: 600px; /* Largeur du label */
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Champs du formulaire */
+form.wpcf7-form input,
+form.wpcf7-form select,
+form.wpcf7-form textarea {
+  width: 600px; /* Ajustement pour que le total fasse 400px */
+  background: #F1F0EC;
+  border: 1px solid #ececed;
+  font-size: 0.8em;
+  color: #122345;
+  padding: 5px;
+}
+
+/* Champ texte plus grand */
+form.wpcf7-form textarea {
+  height: 100px;
+}
+
+/* Bouton d'envoi */
+form.wpcf7-form input[type=submit] {
+  width: 50%;
+  padding: 0.5em;
+  background: var(--yellow);
+  color: #ffffff;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 80px; /* Coins arrondis */
+  display: block;
+  margin: 10px auto; /* Centre horizontalement */
+}
+
+form.wpcf7-form input[type=submit]:hover {
+  background-color: var(--orange);
+}
+
+.wpcf7-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacement entre la case et le texte */
+}
+
+.wpcf7-checkbox input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.bloc-header-contact {
+  position: relative;
+}
+
+.image-contact {
+  position: absolute;
+  display: block;
+  margin: 10px auto 0;
+  max-width: 200px;
+  bottom: 20%;
+  right: 10%;
+}
+
+:root {
+  --orange: #B36A26;
+  --yellow: #D69609;
+  --green: #7E854D;
+  --dark-grey: #463F3A;
+  --dark-blue: #3D566C;
+  --light-grey: #F1F0EC;
+}
+
+* {
+  font-family: "ruda", sans-serif;
+  font-weight: normal;
+  color: var(--dark-grey);
+  line-height: 25px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  flex-direction: column;
+}
+
+section {
+  padding: 30px 10vw;
+}
+
+.section {
+  padding: 10px 10vw;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+a:hover {
+  font-weight: bold;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.temoignage {
+  padding: 8em 30em;
+  position: relative;
+}
+.temoignage div, .temoignage p {
+  padding-bottom: 20px;
+}
+
+.temoignage-pouce {
+  position: absolute;
+  display: block;
+  margin: 10px auto 0;
+  max-width: 120px;
+  bottom: 10%;
+  right: 20%;
+}
+
+.temoignage-bulle {
+  position: absolute;
+  display: block;
+  margin: 10px auto 0;
+  max-width: 170px;
+  top: 10%;
+  left: 20%;
+}
+
+.padding-general {
+  padding-right: 15em;
+  padding-left: 15em;
+}
+
+.offre-colonne {
+  gap: 50px;
+}
+.offre-colonne div {
+  padding: 20px;
+  border-radius: 30px;
+  margin-bottom: 25px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "settings": {
+      "color": {
+        "defaultGradients": false,
+        "defaultPalette": false,
+        "palette": [
+          { "name": "Orange", "slug": "orange", "color": "#B36A26" },
+          { "name": "Jaune", "slug": "yellow", "color": "#D69609" },
+          { "name": "Vert", "slug": "green", "color": "#7E854D" },
+          { "name": "Gris Foncé", "slug": "dark-grey", "color": "#463F3A" },
+          { "name": "Bleu Foncé", "slug": "dark-blue", "color": "#3D566C" },
+          { "name": "Gris Clair", "slug": "light-grey", "color": "#F1F0EC" }
+        ],
+        "background": true,
+        "text": true
+      },
+      "typography": {
+        "fontFamilies": [
+          {
+            "fontFamily": "\"Ruda\", sans-serif",
+            "name": "Ruda",
+            "slug": "ruda"
+          },
+          {
+            "fontFamily": "\"Unica One\", cursive",
+            "name": "Unica One",
+            "slug": "unica-one"
+          }
+        ],
+        "fontSizes": [
+          { "name": "Petit", "slug": "small", "size": "14px" },
+          { "name": "Moyen", "slug": "medium", "size": "18px" },
+          { "name": "Grand", "slug": "large", "size": "24px" },
+          { "name": "Très Grand", "slug": "x-large", "size": "32px" }
+        ]
+      },
+      "layout": {
+        "contentSize": "800px",
+        "wideSize": "1200px"
+      },
+      "spacing": {
+        "padding": true,
+        "margin": true,
+        "blockGap": "20px"
+      }
+    }
+  }
