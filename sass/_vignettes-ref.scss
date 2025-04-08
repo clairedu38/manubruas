@@ -1,0 +1,66 @@
+.vignettes-ref{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px 10em;
+}
+
+
+.reference-card {
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    text-decoration: none;
+    color: inherit;
+
+    // transition douce pour l'animation
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    // Effet au survol
+    &:hover {
+        transform: translateY(-5px) scale(1.02);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.reference-image {
+    overflow: hidden;
+    border-radius: 4px;
+
+    img {
+        transition: transform 0.4s ease;
+    }
+}
+
+.reference-card:hover .reference-image img {
+    transform: scale(1.05);
+}
+
+.reference-info {
+    width: 100%;
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+        div{
+            width: 50%;
+        }
+}
+.reference-categories{
+    text-align: right;
+    font-size: 14px;
+
+}
+
+.reference-text{
+    p, h3 {
+        margin: 0;
+    }
+
+}

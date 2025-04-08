@@ -10,3 +10,41 @@
         color: white;
     }
 }
+
+.mise-en-page-references {
+    display: flex;
+    gap: 4rem;
+}
+
+.bloc-filtres {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+
+    .filtre-option {
+        cursor: pointer;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: var(--light-grey);
+        }
+
+        &.selectionne {
+            background-color: var(--yellow);
+            font-weight: bold;
+            strong, p {color: white;}
+        }
+    }
+}
+
+.vignettes-refs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    justify-items: center;
+
+}

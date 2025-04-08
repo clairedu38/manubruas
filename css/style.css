@@ -165,8 +165,11 @@ article span {
   padding-left: 20px;
 }
 
-.vignette-projet {
-  display: flex;
+.titre-autre-projet {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--green);
+  font-size: 25px;
 }
 
 .reference-titre {
@@ -179,6 +182,42 @@ article span {
 }
 .reference-titre p, .reference-titre strong {
   color: white;
+}
+
+.mise-en-page-references {
+  display: flex;
+  gap: 4rem;
+}
+
+.bloc-filtres {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+.bloc-filtres .filtre-option {
+  cursor: pointer;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+.bloc-filtres .filtre-option:hover {
+  background-color: var(--light-grey);
+}
+.bloc-filtres .filtre-option.selectionne {
+  background-color: var(--yellow);
+  font-weight: bold;
+}
+.bloc-filtres .filtre-option.selectionne strong, .bloc-filtres .filtre-option.selectionne p {
+  color: white;
+}
+
+.vignettes-refs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
 }
 
 .bloc-inscription-newsletter {
@@ -389,4 +428,62 @@ strong {
   padding: 20px;
   border-radius: 30px;
   margin-bottom: 25px;
+}
+
+.vignettes-ref {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  justify-items: center;
+  padding: 30px 10em;
+}
+
+.reference-card {
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.reference-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.reference-image {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.reference-image img {
+  transition: transform 0.4s ease;
+}
+
+.reference-card:hover .reference-image img {
+  transform: scale(1.05);
+}
+
+.reference-info {
+  width: 100%;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+.reference-info div {
+  width: 50%;
+}
+
+.reference-categories {
+  text-align: right;
+  font-size: 14px;
+}
+
+.reference-text p, .reference-text h3 {
+  margin: 0;
 }/*# sourceMappingURL=style.css.map */
