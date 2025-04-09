@@ -54,9 +54,36 @@ article {
     padding-left: 20px;
 }
 
-.titre-autre-projet{
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--green);
-    font-size: 25px;
+.projet-autres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--green);
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+
+    .sous-titre-autre-projet {
+        margin-top: 10px;
+    }
+}
+
+.bouton {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: var(--green);
+    color: white; 
+    text-decoration: none; 
+    border-radius: 25px; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Animation de couleur au survol */
+}
+
+.bouton:hover {
+    transform: translateY(-1px); /* Effet de levée du bouton au survol */
 }

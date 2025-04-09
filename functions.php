@@ -32,6 +32,9 @@ function theme_enqueue_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
+
+
+
 // Requete pour affichage des images dans le catalogue
 function filter_posts() {
 

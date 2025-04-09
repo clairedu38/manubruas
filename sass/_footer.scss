@@ -43,7 +43,8 @@ footer {
             >div {
                 display: flex;
                 flex-direction: column;
-                align-items: flex-end;
+                align-items: flex;
+                height: 200px;
 
                 li {
                     list-style-type: none;
@@ -56,6 +57,11 @@ footer {
                     font-size: 16px;
                     margin-bottom: 0px;
     
+                }
+
+                .linkedin-footer {
+                    display: flex;
+                    justify-content: flex-end;
                 }
                 img {
                     height: 25px;

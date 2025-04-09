@@ -28,6 +28,10 @@
         border-radius: 4px;
         transition: background-color 0.3s ease;
 
+        p {
+            margin: 0;
+        }
+
         &:hover {
             background-color: var(--light-grey);
             color: var(--dark-grey);
@@ -49,6 +53,6 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     justify-content: center;
-    justify-items: center;
-
+    justify-items: center;  
+    align-items: start;
 }

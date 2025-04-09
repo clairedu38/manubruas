@@ -18,7 +18,7 @@
     <aside class="bloc-filtres">
         <?php $categories = get_categories(); ?>
         <div class="filtre-option tout-filtre selectionne">
-            <p>Toutes les catégories</p>
+            <p><?php echo esc_html(get_field('titre_filtre', 13)); ?></p>
         </div>
         <?php foreach ($categories as $category) : ?>
             <div class="filtre-option choix-filtre">

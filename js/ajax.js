@@ -10,22 +10,17 @@ function filterListeners() {
 
     options.forEach(function(option) {
         option.addEventListener('click', function() {
-            changeColorFilter();
+            updateSelectedClass(option); // <- ici
             changeFilter(option);
         });
     });
 }
 
-function changeColorFilter () {
-   
+// Cette fonction met à jour la classe "selectionne"
+function updateSelectedClass(selectedOption) {
     const options = document.querySelectorAll('.bloc-filtres .filtre-option');
-
-    options.forEach(option => {
-        option.addEventListener('click', function() {
-            options.forEach(opt => opt.classList.remove('selectionne'));
-            this.classList.add('selectionne');
-        });
-    });
+    options.forEach(opt => opt.classList.remove('selectionne'));
+    selectedOption.classList.add('selectionne');
 }
 
 function changeFilter(option) {
@@ -41,7 +36,6 @@ function changeFilter(option) {
     console.log(categoryChoice);
 }
 
-// Fonction pour charger les données sans recharger la page via AJAX
 function load_ajax() {
     let category = categoryChoice;
 
@@ -64,5 +58,4 @@ function load_ajax() {
         const cataloguePortfolio = document.querySelector('.portfolio');
         cataloguePortfolio.innerHTML = body;
     });
-
 }

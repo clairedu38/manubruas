@@ -17,9 +17,10 @@ $categories = get_the_category();
     ?>
 </article>
 
-<div>
-    <h3 class="titre-autre-projet">Parcourir d'autres projets</h3>
-</div>
+<div class="projet-autres">
+    <h2><?php echo esc_html(get_field('titre_autres_projets')); ?></h2>
+    <h3 class="sous-titre-autre-projet"><?php echo esc_html(get_field('sous_titre_projets')); ?></h3>
+
 <?php
 $categories = get_the_category();
 if ($categories) {
@@ -43,6 +44,11 @@ if ($categories) {
         </section>
     <?php endif;
 }
-?>
+?>    
+<a class="bouton" href="<?php echo esc_url(get_field('bouton_references')['url']); ?>" class="btn-references">
+<?php echo esc_html(get_field('bouton_references')['title']); ?>
+</a>
+
+</div>
 
 <?php get_footer(); ?>
