@@ -32,12 +32,16 @@ header {
       padding-left: 45px;
     }
   }
-
-  .menu-toggle {
-    display: none;
-  } 
+// Désactive le gras pour les liens de menu au hover
+.header-menu a:hover {
+  font-weight: normal;
+  border-bottom: 1px solid var(--yellow);
 }
 
-.close-menu {
-  display: flex;
+// Bordure verte sur le lien actif du menu header
+.header-menu .current-menu-item a {
+  border-bottom: 1px solid var(--green);
 }
+
+}
+

@@ -14,7 +14,7 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         padding: 4vh;
-        background-color: var(--light-grey);
+        background-color: var(--light-grey-2);
 
 
         &-logo {
@@ -67,10 +67,13 @@ footer {
                     height: 25px;
 
                 }
-            }
-            
-           
+            } 
         }
+
+        a:hover {
+            font-weight: normal;
+            border-bottom: 1px solid var(--yellow);
+          }
     }
 
     .second-footer {
@@ -79,11 +82,13 @@ footer {
         display: flex;
         justify-content: center;
         
+        
         p {
             color: white;
             a {
                 font-family: "Work Sans", sans-serif;
             }
+           
         }
         
     }

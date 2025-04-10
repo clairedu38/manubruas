@@ -14,7 +14,7 @@ footer .first-footer {
   justify-content: space-evenly;
   align-items: center;
   padding: 4vh;
-  background-color: var(--light-grey);
+  background-color: var(--light-grey-2);
 }
 footer .first-footer-logo {
   display: flex;
@@ -59,6 +59,10 @@ footer .first-footer-menu > div .linkedin-footer {
 footer .first-footer-menu > div img {
   height: 25px;
 }
+footer .first-footer a:hover {
+  font-weight: normal;
+  border-bottom: 1px solid var(--yellow);
+}
 footer .second-footer {
   background-color: var(--dark-grey);
   width: 100%;
@@ -73,7 +77,11 @@ footer .second-footer p a {
 }
 
 .accueil-banniere {
-  padding: 0 23em;
+  padding: 5em 18em 5em 23em;
+}
+.accueil-banniere h1 {
+  text-align: left;
+  margin-top: 15px;
 }
 
 .accueil-offres {
@@ -117,12 +125,12 @@ header .header-menu li {
   list-style-type: none;
   padding-left: 45px;
 }
-header .menu-toggle {
-  display: none;
+header .header-menu a:hover {
+  font-weight: normal;
+  border-bottom: 1px solid var(--yellow);
 }
-
-.close-menu {
-  display: flex;
+header .header-menu .current-menu-item a {
+  border-bottom: 1px solid var(--green);
 }
 
 .article-titre {
@@ -160,7 +168,7 @@ article strong {
   font-weight: 700;
 }
 article .bloc-contact {
-  padding: 100px;
+  padding: 70px;
   gap: 20px;
 }
 article .bloc-contact h3 {
@@ -178,17 +186,7 @@ article span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
-}
-.projet-autres h2 {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--green);
-  font-size: 25px;
-  margin-bottom: 0;
-}
-.projet-autres .sous-titre-autre-projet {
-  margin-top: 10px;
+  padding: 0 0 100px 0;
 }
 
 .bouton {
@@ -232,7 +230,7 @@ article span {
   cursor: pointer;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
-  border-radius: 4px;
+  border-radius: 50px;
   transition: background-color 0.3s ease;
 }
 .bloc-filtres .filtre-option p {
@@ -304,7 +302,7 @@ form.wpcf7-form textarea {
   background: #F1F0EC;
   border: 1px solid #ececed;
   font-size: 0.8em;
-  color: #122345;
+  color: var(--dark-grey);
   padding: 5px;
 }
 
@@ -325,10 +323,12 @@ form.wpcf7-form input[type=submit] {
   border-radius: 80px; /* Coins arrondis */
   display: block;
   margin: 10px auto; /* Centre horizontalement */
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form.wpcf7-form input[type=submit]:hover {
-  background-color: var(--orange);
+  transform: translateY(-1px);
+  font-weight: 700;
 }
 
 .wpcf7-checkbox {
@@ -363,6 +363,7 @@ form.wpcf7-form input[type=submit]:hover {
   --dark-grey: #463F3A;
   --dark-blue: #3D566C;
   --light-grey: #F1F0EC;
+  --light-grey-2: #F6F6F6;
 }
 
 * {

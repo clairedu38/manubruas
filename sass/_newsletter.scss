@@ -43,7 +43,7 @@ form.wpcf7-form textarea {
     background: #F1F0EC;
     border: 1px solid #ececed;
     font-size: 0.8em;
-    color: #122345;
+    color: var(--dark-grey);
     padding: 5px;
 }
 
@@ -64,10 +64,13 @@ form.wpcf7-form input[type="submit"] {
     border-radius: 80px; /* Coins arrondis */
     display: block;
     margin: 10px auto; /* Centre horizontalement */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 form.wpcf7-form input[type="submit"]:hover {
-    background-color: var(--orange);
+    //background-color: var(--orange);
+    transform: translateY(-1px);
+    font-weight: 700 ;
 }
 
 .wpcf7-checkbox {
