@@ -16,20 +16,32 @@ register_nav_menus( array(
 function theme_enqueue_styles() {
     wp_enqueue_style( 'theme-style', get_stylesheet_uri() );
     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/css/style.css' );
+    
 }
 
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
+function enqueue_custom_google_fonts() {
+    wp_enqueue_style(
+        'custom-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Ruda:wght@400;700&family=Unica+One&display=swap',
+        false
+    );
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_custom_google_fonts' );
+add_action( 'enqueue_block_editor_assets', 'enqueue_custom_google_fonts' );
+
 function theme_enqueue_scripts() {
+    wp_enqueue_script( 'menu-script', get_stylesheet_directory_uri() . '/js/menu.js', array(), null, true );
+
     if ( is_page_template('references.php') ) {
         wp_enqueue_script( 'references-script', get_stylesheet_directory_uri() . '/js/ajax.js', array(), null, true );
         wp_localize_script('references-script', 'ajax_object', array(
             'ajax_url' => admin_url('admin-ajax.php'),
             'nonce'    => wp_create_nonce('filter_photos_nonce')
         ));
-    } 
+    }
 }
-
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 
 

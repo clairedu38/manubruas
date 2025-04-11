@@ -3,15 +3,11 @@
 
         <div class="first-footer-logo">
             <div>
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bruas.svg" alt="Logo bruas">
-                </a>
+                <img src="<?php echo esc_url(get_field('logo', 2)['url']); ?>" alt="Logo Emmanuel Bruas">
             </div>
             <div>
                 <p><?php echo esc_html(get_field('texte_3bis', 2)); ?></p>
-                <a href="#">
-                    <img src="<?php echo esc_url(get_field('image_3bis', 2)['url']); ?>" alt="Logo 3bis">
-                </a>
+                <div><img src="<?php echo esc_url(get_field('image_3bis', 2)['url']); ?>" alt="Logo 3bis"></div>
             </div>
         </div>
 

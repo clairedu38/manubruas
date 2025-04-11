@@ -10,8 +10,8 @@
 
 // BREAKPOINT MEDIA QUERY
 
-$breakpoint__large_phone: 700px;
-$breakpoint__tab: 1115px;
+$breakpoint__large_phone: 767px;
+$breakpoint__tab: 1024px;
 
 * {
     font-family: 'ruda', sans-serif;
@@ -47,6 +47,7 @@ a {
 
 h1, h2 {
     text-transform: uppercase;
+    font-family: 'Unica One', sans-serif;
 }
 
 h1 {
@@ -58,6 +59,7 @@ h1 {
 h2 {
     font-size: 25px; 
     font-weight: normal;
+    line-height: 1;
 }
 
 h3 {
@@ -84,6 +86,14 @@ strong {
 .temoignage {
     padding: 8em 30em;
     position: relative;
+
+    @media (max-width: 1324px) {
+        padding: 4em 15em;
+    }
+
+    @media (max-width: $breakpoint__large_phone) {
+        padding: 2em 1em;
+    }
  
     div, p {
         padding-bottom: 20px;
@@ -97,6 +107,15 @@ strong {
     max-width: 120px; 
     bottom: 10%; 
     right: 20%;
+
+    @media (max-width: 1324px) {
+        bottom: 5%; 
+        right: 10%;
+    }
+
+    @media (max-width: $breakpoint__large_phone) {
+        display: none;
+    }
 }
 
 .temoignage-bulle {
@@ -106,9 +125,26 @@ strong {
     max-width: 170px; 
     top: 10%; 
     left: 20%;
+
+    @media (max-width: 1324px) {
+        top: 5%; 
+        left: 10%;
+    }
+
+    @media (max-width: $breakpoint__large_phone) {
+        position:initial;
+        display: flex;
+        margin: 0; 
+    }
 }
 
 .padding-general {
     padding-right: 15em;
     padding-left: 15em;
 }
+
+.icones-engagements{
+    padding-right: 10em;
+    padding-left: 10em;
+}
+

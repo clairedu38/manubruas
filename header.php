@@ -16,8 +16,18 @@
 
   <header>
             <div class="logo-header">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bruas.svg" alt="Logo Nathalie"></a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+                    <img src="<?php echo esc_url(get_field('logo', 2)['url']); ?>" alt="Logo Emmanuel Bruas">
+                </a>
             </div>
+
+             <!-- Burger menu (visible en mobile) -->
+        <div class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
             <nav id="main-menu">
                 <?php
                     wp_nav_menu(array(
@@ -27,4 +37,12 @@
                     ));               
                 ?>
             </nav>
+
+            <button class="menu-toggle" id="menu-toggle">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+            
         </header>

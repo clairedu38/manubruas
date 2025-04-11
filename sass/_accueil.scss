@@ -1,24 +1,54 @@
 .accueil-banniere {
-     padding: 5em 18em 5em 23em;
+    padding: 5em 15% 5em 15%;
 
      h1 {
-       text-align: left; 
        margin-top: 15px;
+       font-family: 'ruda', sans-serif;
+       text-align: left;
      }
+
+     h2 {
+        font-family: 'Unica One', sans-serif;
+     }
+
+    @media (max-width: $breakpoint__tab) {
+        padding: 4em 10em 4em 15em;
+        h1 {text-align: center;}
+    }
+
+    @media (max-width: $breakpoint__large_phone) {
+        padding: 2em;
+    }
+    
 }
 
 .accueil-offres {
     padding: 0 20%;
+
+    @media (max-width: 1324px) {
+        padding: 0 5%;
+    }
+
+    @media (max-width: $breakpoint__large_phone) {
+        padding: 2em;
+    }
 }
 .accueil-offre {
     
-    div {
-        padding: 30px;
+    >div {
         border-radius: 30px;
+        height: auto;
 
     }
 
     h2, h4 {
         padding-bottom: 10px;
+    }
+}
+.offre-expertises {
+    padding: 30px;
+
+    @media (max-width: $breakpoint__large_phone) {
+        padding: 20px;
     }
 }
