@@ -5,6 +5,13 @@
     justify-content: center;
     justify-items: center;
     padding: 30px 20em;
+
+    @media (max-width: 770px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+     }
+
+    
 }
 
 
@@ -60,6 +67,10 @@
 .reference-categories{
     text-align: right;
     font-size: 14px;
+    
+    @media (max-width: 740px) {
+        font-size: 12px;
+     }
 
 }
 
@@ -67,5 +78,11 @@
     p, h3 {
         margin: 0;
     }
+
+    @media (max-width: 740px) {
+        p {font-size: 12px;}
+        h3 {font-size: 16px;}
+     }
+     
 
 }

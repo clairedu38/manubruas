@@ -141,6 +141,16 @@ strong {
 .padding-general {
     padding-right: 15em;
     padding-left: 15em;
+
+    @media (max-width: 1324px) {
+        padding-right: 7em;
+        padding-left: 7em;
+    }
+    
+    @media (max-width: 800px) {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
 }
 
 .icones-engagements{

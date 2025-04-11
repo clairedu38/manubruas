@@ -141,6 +141,18 @@ strong {
   padding-right: 15em;
   padding-left: 15em;
 }
+@media (max-width: 1324px) {
+  .padding-general {
+    padding-right: 7em;
+    padding-left: 7em;
+  }
+}
+@media (max-width: 800px) {
+  .padding-general {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
 
 .icones-engagements {
   padding-right: 10em;
@@ -336,6 +348,10 @@ footer .second-footer p a {
 .accueil-offre h2, .accueil-offre h4 {
   padding-bottom: 10px;
 }
+.accueil-offre ul {
+  margin: 0 30px 50px 30px;
+  padding-left: 30px;
+}
 
 .offre-expertises {
   padding: 30px;
@@ -521,6 +537,11 @@ article .article-temoignage {
   display: flex;
   gap: 50px;
 }
+@media (max-width: 1200px) {
+  article .article-temoignage {
+    padding: 40px 50px;
+  }
+}
 article strong {
   color: white;
   font-weight: 700;
@@ -535,6 +556,9 @@ article .bloc-contact h3 {
 article span {
   color: var(--yellow);
 }
+article .article-contact {
+  font-family: "Unica One", sans-serif;
+}
 
 .livrable {
   padding-left: 20px;
@@ -545,6 +569,11 @@ article span {
   flex-direction: column;
   align-items: center;
   padding: 0 0 100px 0;
+}
+@media (max-width: 740px) {
+  .projet-autres {
+    padding: 0 0 40px 0;
+  }
 }
 
 .bouton {
@@ -568,7 +597,7 @@ article span {
   padding: 5%;
 }
 .reference-titre h1 {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 .reference-titre p, .reference-titre strong {
   color: white;
@@ -577,6 +606,13 @@ article span {
 .mise-en-page-references {
   display: flex;
   gap: 4rem;
+}
+@media (max-width: 740px) {
+  .mise-en-page-references {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
 
 .bloc-filtres {
@@ -593,6 +629,11 @@ article span {
 }
 .bloc-filtres .filtre-option p {
   margin: 0;
+}
+@media (max-width: 740px) {
+  .bloc-filtres .filtre-option p {
+    font-size: 14px;
+  }
 }
 .bloc-filtres .filtre-option:hover {
   background-color: var(--light-grey);
@@ -615,6 +656,12 @@ article span {
   justify-content: center;
   justify-items: center;
   align-items: start;
+}
+@media (max-width: 1150px) {
+  .vignettes-refs {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 }
 
 .bloc-inscription-newsletter {
@@ -720,6 +767,26 @@ form.wpcf7-form input[type=submit]:hover {
   margin: 0;
 }
 
+@media (max-width: 600px) {
+  form.wpcf7-form {
+    width: 90%;
+  }
+  form.wpcf7-form table {
+    width: 100%;
+  }
+  form.wpcf7-form label {
+    width: 100%;
+  }
+  form.wpcf7-form input,
+  form.wpcf7-form select,
+  form.wpcf7-form textarea {
+    width: 100%;
+  }
+  form.wpcf7-form input[type=submit] {
+    width: auto;
+    font-size: 14px;
+  }
+}
 .bloc-header-contact {
   position: relative;
 }
@@ -731,6 +798,17 @@ form.wpcf7-form input[type=submit]:hover {
   max-width: 200px;
   bottom: 20%;
   right: 10%;
+}
+@media (max-width: 1000px) {
+  .image-contact {
+    bottom: 10%;
+    right: 5%;
+  }
+}
+@media (max-width: 850px) {
+  .image-contact {
+    display: none;
+  }
 }
 
 .offre-colonne {
@@ -749,6 +827,12 @@ form.wpcf7-form input[type=submit]:hover {
   justify-content: center;
   justify-items: center;
   padding: 30px 20em;
+}
+@media (max-width: 770px) {
+  .vignettes-ref {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
 }
 
 .reference-card {
@@ -802,7 +886,20 @@ form.wpcf7-form input[type=submit]:hover {
   text-align: right;
   font-size: 14px;
 }
+@media (max-width: 740px) {
+  .reference-categories {
+    font-size: 12px;
+  }
+}
 
 .reference-text p, .reference-text h3 {
   margin: 0;
+}
+@media (max-width: 740px) {
+  .reference-text p {
+    font-size: 12px;
+  }
+  .reference-text h3 {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

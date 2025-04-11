@@ -30,6 +30,10 @@ article {
         padding: 80px 300px;
         display: flex;
         gap: 50px;
+
+        @media (max-width: 1200px) {
+            padding: 40px 50px;
+        }
     }
 
     strong {
@@ -47,6 +51,10 @@ article {
     span {
         color: var(--yellow);
     }
+
+    .article-contact {
+        font-family: 'Unica One', sans-serif;
+    }
 }
 
 
@@ -59,6 +67,10 @@ article {
     flex-direction: column;
     align-items: center;
     padding: 0 0 100px 0;
+     
+    @media (max-width: 740px) {
+        padding: 0 0 40px 0;
+     }
 }
 
 .bouton {

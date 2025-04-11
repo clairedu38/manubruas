@@ -101,6 +101,32 @@ form.wpcf7-form input[type="submit"]:hover {
     margin: 0;
 }
 
+@media (max-width: 600px) {
+    form.wpcf7-form {
+        width: 90%;
+    }
+
+    form.wpcf7-form table {
+        width: 100%;
+    }
+
+    form.wpcf7-form label {
+        width: 100%; 
+    }
+
+    form.wpcf7-form input,
+    form.wpcf7-form select,
+    form.wpcf7-form textarea {
+        width: 100%;
+    }
+    
+    form.wpcf7-form input[type="submit"] {
+        width: auto;
+        font-size: 14px;
+    }
+}
+
+
 .bloc-header-contact{
     position: relative;
 }
@@ -112,4 +138,13 @@ form.wpcf7-form input[type="submit"]:hover {
     max-width: 200px; 
     bottom: 20%; 
     right: 10%;
-}
+
+    @media (max-width: 1000px) {
+        bottom: 10%; 
+        right: 5%;
+    }
+
+    @media (max-width: 850px) {
+        display: none;
+    }
+} 
