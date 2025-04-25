@@ -7,6 +7,15 @@
     }
 }
 
+.newsletter-edition {
+    display: inline-block; 
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 80px;
+    color: var(--yellow);
+    padding: 5px;
+}
+
 .image-newsletter {
     position: absolute; 
     display: block;

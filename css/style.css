@@ -173,7 +173,7 @@ footer .first-footer {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  padding: 4vh;
+  padding: 4vh 0;
   background-color: var(--light-grey-2);
 }
 footer .first-footer-logo {
@@ -225,6 +225,16 @@ footer .first-footer-menu > div img {
 }
 footer .first-footer-menu > div .linkedin-footer:hover {
   border-bottom: none;
+}
+footer .first-footer .logo-3bis {
+  margin-top: 10px;
+}
+footer .first-footer .logo-3bis img {
+  max-width: 180px;
+  height: auto;
+}
+footer .first-footer .logo-3bis a {
+  display: inline-block;
 }
 footer .second-footer {
   background-color: var(--dark-grey);
@@ -328,6 +338,9 @@ footer .second-footer p a {
 }
 
 .accueil-offres {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 0 20%;
 }
 @media (max-width: 1324px) {
@@ -341,9 +354,22 @@ footer .second-footer p a {
   }
 }
 
+.wp-container-core-group-is-layout-882f8061 {
+  flex-wrap: wrap !important;
+}
+
+.accueil-offre {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  margin: 15px;
+}
 .accueil-offre > div {
   border-radius: 30px;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .accueil-offre h2, .accueil-offre h4 {
   padding-bottom: 10px;
@@ -355,6 +381,8 @@ footer .second-footer p a {
 
 .offre-expertises {
   padding: 30px;
+  display: flex;
+  flex: 1;
 }
 @media (max-width: 767px) {
   .offre-expertises {
@@ -672,6 +700,15 @@ article .article-contact {
     padding: 0 5%;
     display: flex;
   }
+}
+
+.newsletter-edition {
+  display: inline-block;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 80px;
+  color: var(--yellow);
+  padding: 5px;
 }
 
 .image-newsletter {

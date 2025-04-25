@@ -23,6 +23,9 @@
 }
 
 .accueil-offres {
+    display: flex; // Ajoutez Flexbox pour aligner les éléments
+    flex-wrap: wrap;  // Permet aux éléments de se répartir sur plusieurs lignes si nécessaire
+    justify-content: space-between;  // Espace entre les éléments pour une grille propre
     padding: 0 20%;
 
     @media (max-width: 1324px) {
@@ -35,11 +38,23 @@
 
     
 }
+
+.wp-container-core-group-is-layout-882f8061 {
+    flex-wrap: wrap !important;
+}
+
 .accueil-offre {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin: 15px;
     
     >div {
         border-radius: 30px;
         height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
 
     }
 
@@ -54,6 +69,8 @@
 }
 .offre-expertises {
     padding: 30px;
+    display: flex;         
+    flex: 1; 
 
     @media (max-width: $breakpoint__large_phone) {
         padding: 20px;
