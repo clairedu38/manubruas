@@ -1,15 +1,7 @@
 <a href="<?php the_permalink(); ?>" class="reference-card">
-    <?php if (has_post_thumbnail()) : ?>
-        <div class="reference-image">
-            <?php the_post_thumbnail('medium'); ?>
-        </div>
-    <?php endif; ?>
-
-    <div class="reference-info">
-        <div class="reference-text">
-            <h3><?php the_title(); ?></h3>
-            <p><?php echo get_the_date('Y'); ?></p>
-        </div>
+    <div class="reference-text">
+        <h3><?php the_title(); ?></h3>
+        <p><?php echo get_the_date('Y'); ?></p>
         <div class="reference-categories">
             <?php
             $categories = get_the_category();
@@ -22,4 +14,10 @@
             ?>
         </div>
     </div>
+
+    <?php if (has_post_thumbnail()) : ?>
+        <div class="reference-image">
+            <?php the_post_thumbnail('medium'); ?>
+        </div>
+    <?php endif; ?>
 </a>

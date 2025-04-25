@@ -271,7 +271,7 @@ footer .second-footer p a {
 @media (max-width: 767px) {
   footer .first-footer {
     flex-direction: column;
-    width: 100%;
+    width: auto;
   }
   footer .first-footer-logo {
     display: flex;
@@ -306,6 +306,9 @@ footer .second-footer p a {
   }
   footer .first-footer-menu > div .linkedin-footer {
     justify-content: center;
+  }
+  footer .first-footer .logo-3bis img {
+    max-width: 100px;
   }
   footer .second-footer p {
     font-size: 10px;
@@ -404,7 +407,13 @@ header .logo-header {
   height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-left: 5%;
+}
+header .logo-header a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 800px) {
   header .logo-header {
@@ -412,7 +421,8 @@ header .logo-header {
   }
 }
 header .logo-header img {
-  width: auto;
+  width: 400px;
+  height: auto;
 }
 @media (max-width: 800px) {
   header .logo-header img {
@@ -622,7 +632,12 @@ article .article-contact {
 .reference-titre {
   text-align: center;
   margin-bottom: 20px;
-  padding: 5%;
+  padding: 5% 25%;
+}
+@media (max-width: 740px) {
+  .reference-titre {
+    padding: 5%;
+  }
 }
 .reference-titre h1 {
   margin-bottom: 5px;
@@ -634,6 +649,7 @@ article .article-contact {
 .mise-en-page-references {
   display: flex;
   gap: 4rem;
+  align-items: flex-start;
 }
 @media (max-width: 740px) {
   .mise-en-page-references {
@@ -678,12 +694,13 @@ article .article-contact {
 }
 
 .vignettes-refs {
+  flex: 2;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-content: center;
   justify-items: center;
-  align-items: start;
+  align-items: stretch;
 }
 @media (max-width: 1150px) {
   .vignettes-refs {
@@ -863,42 +880,77 @@ form.wpcf7-form input[type=submit]:hover {
   gap: 2rem;
   justify-content: center;
   justify-items: center;
-  padding: 30px 20em;
+  padding: 30px 15em;
 }
 @media (max-width: 770px) {
   .vignettes-ref {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    padding: 30px 2em;
   }
 }
 
 .reference-card {
+  display: flex;
+  gap: 10px;
   padding: 2em;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-decoration: none;
   color: inherit;
-  width: 80%;
-  height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: white;
+  flex-grow: 1;
 }
 .reference-card:hover {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
+@media (max-width: 770px) {
+  .reference-card {
+    flex-direction: row-reverse;
+  }
+}
+
+.reference-text {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 1.5em;
+}
+.reference-text h3 {
+  margin: 0 0 0.3em 0;
+  font-size: 1.5em;
+}
+.reference-text p {
+  margin: 0 0 0.3em 0;
+  font-size: 1em;
+}
+.reference-text .reference-categories {
+  font-size: 0.9em;
+  color: #666;
+}
+@media (max-width: 770px) {
+  .reference-text {
+    padding: 1em 0 0 0;
+  }
+  .reference-text h3 {
+    font-size: 1.3em;
+  }
+  .reference-text p {
+    font-size: 0.9em;
+  }
+}
 
 .reference-image {
-  overflow: hidden;
-  width: 300px;
-  height: 200px;
+  flex: 2;
+  max-width: 300px;
+  height: auto;
+  display: flex;
 }
 .reference-image img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: contain;
      object-fit: contain;
   display: block;
@@ -907,36 +959,4 @@ form.wpcf7-form input[type=submit]:hover {
 
 .reference-card:hover .reference-image img {
   transform: scale(1.05);
-}
-
-.reference-info {
-  width: 100%;
-  display: flex;
-  margin-top: 15px;
-  align-items: center;
-}
-.reference-info div {
-  width: 50%;
-}
-
-.reference-categories {
-  text-align: right;
-  font-size: 14px;
-}
-@media (max-width: 740px) {
-  .reference-categories {
-    font-size: 12px;
-  }
-}
-
-.reference-text p, .reference-text h3 {
-  margin: 0;
-}
-@media (max-width: 740px) {
-  .reference-text p {
-    font-size: 12px;
-  }
-  .reference-text h3 {
-    font-size: 16px;
-  }
 }/*# sourceMappingURL=style.css.map */

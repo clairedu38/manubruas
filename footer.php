@@ -3,8 +3,8 @@
 
         <div class="first-footer-logo">
             <div>
-                <img src="<?php echo esc_url(get_field('logo', 2)['url']); ?>" alt="Logo Emmanuel Bruas">
-            </div>
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bruas.svg" alt="Logo Emmanuel Bruas" width="100%" height="auto">            
+        </div>
             <div>
                 <p><?php echo esc_html(get_field('texte_3bis', 2)); ?></p>
                 <?php 

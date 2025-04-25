@@ -141,7 +141,7 @@ footer {
     footer { 
         .first-footer {
             flex-direction: column;
-            width: 100%;
+            width: auto;
     
             &-logo {
                 display: flex;
@@ -183,6 +183,9 @@ footer {
                     }
     
                 } 
+            }
+            .logo-3bis {
+                img { max-width: 100px;}
             }
         }
     

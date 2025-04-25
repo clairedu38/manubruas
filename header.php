@@ -17,7 +17,7 @@
   <header>
             <div class="logo-header">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
-                    <img src="<?php echo esc_url(get_field('logo', 2)['url']); ?>" alt="Logo Emmanuel Bruas">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-bruas.svg" alt="Logo Emmanuel Bruas">  
                 </a>
             </div>
 
